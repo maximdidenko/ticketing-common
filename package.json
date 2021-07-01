@@ -1,6 +1,6 @@
 {
   "name": "@md-tickets/common",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
@@ -8,7 +8,7 @@
     "build/**/*"
   ],
   "scripts": {
-    "clean": "del /Q /S .\\build\\*",
+    "clean": "del-cli ./build/*",
     "build": "npm run clean && tsc",
     "pub": "git add . && git commit -m \"updates\" && npm version patch && npm run build && npm publish"
   },
