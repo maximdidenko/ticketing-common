@@ -8,15 +8,13 @@
     "build/**/*"
   ],
   "scripts": {
-    "clean": "del-cli ./build/*",
-    "build": "npm run clean && tsc",
-    "pub": "git add . && git commit -m \"updates\" && npm version patch && npm run build && npm publish"
+    "build": "tsc",
+    "pub": "npm version patch && npm run build && npm publish"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "del-cli": "^4.0.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
